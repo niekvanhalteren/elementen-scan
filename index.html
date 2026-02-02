@@ -1,203 +1,475 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="nl">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Elementen Scan – het Nationale Theater (Individu & Team)</title>
+<style>
+  :root{
+    --bg:#f7f7f5;
+    --card:#ffffff;
+    --ink:#111111;
+    --muted:#5a5a5a;
+    --line:#d6d6d2;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+    background:var(--bg);
+    color:var(--ink);
+  }
+  header{
+    padding:40px 22px 10px;
+    max-width:1100px;
+    margin:0 auto;
+  }
+  h1{
+    font-weight:400;
+    margin:0 0 8px;
+    font-size:2.1rem;
+    letter-spacing:0.2px;
+  }
+  p{line-height:1.65}
+  .muted{color:var(--muted)}
+  main{
+    max-width:1100px;
+    margin:0 auto;
+    padding:10px 22px 60px;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:18px 18px;
+    margin:14px 0;
+  }
+  .row{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:14px;
+  }
+  @media(min-width: 980px){
+    .row.two{ grid-template-columns: 1.1fr .9fr; }
+  }
+  .legend{
+    font-size:.95rem;
+    line-height:1.5;
+  }
+  .scale-legend{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:6px;
+    padding:14px 14px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:#fbfbfa;
+  }
+  @media(min-width:700px){
+    .scale-legend{ grid-template-columns: 1fr 1fr; }
+  }
+  .q{
+    padding:14px 0;
+    border-bottom:1px dashed #e3e3df;
+  }
+  .q:last-child{border-bottom:none}
+  .q-title{margin:0 0 8px}
+  .scale{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .scale label{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding:6px 10px;
+    border:1px solid #e6e6e1;
+    border-radius:999px;
+    background:#ffffff;
+    cursor:pointer;
+    user-select:none;
+  }
+  .scale input{ margin:0 }
+  .controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+  }
+  button{
+    appearance:none;
+    border:1px solid #111;
+    background:#111;
+    color:#fff;
+    padding:10px 14px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:.98rem;
+  }
+  button.secondary{
+    background:transparent;
+    color:#111;
+  }
+  button.ghost{
+    background:transparent;
+    color:#111;
+    border-color:var(--line);
+  }
+  input[type="text"]{
+    width:100%;
+    padding:10px 12px;
+    border-radius:12px;
+    border:1px solid var(--line);
+    font-size:1rem;
+    background:#fff;
+  }
+  canvas{
+    width:100%;
+    height:auto;
+    border:1px solid var(--line);
+    border-radius:14px;
+    background:#fff;
+  }
+  .mini{
+    font-size:.92rem;
+    color:var(--muted);
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:.95rem;
+  }
+  th, td{
+    text-align:left;
+    padding:10px 8px;
+    border-bottom:1px solid #ededeb;
+    vertical-align:top;
+  }
+  th{font-weight:600}
+  .pill{
+    display:inline-block;
+    padding:6px 10px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    font-size:.9rem;
+    margin-right:6px;
+    background:#fbfbfa;
+  }
+  .hr{
+    height:1px;
+    background:var(--line);
+    margin:18px 0;
+  }
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="nl"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;title&gt;Elementen Scan – het Nationale Theater&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;style&gt;</span></p>
-<p class="p1"><span class="s1">body{</span></p>
-<p class="p1"><span class="s1">  font-family: Georgia, "Times New Roman", serif;</span></p>
-<p class="p1"><span class="s1">  background:#f7f7f5;</span></p>
-<p class="p1"><span class="s1">  color:#111;</span></p>
-<p class="p1"><span class="s1">  margin:0;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.container{</span></p>
-<p class="p1"><span class="s1">  max-width:1000px;</span></p>
-<p class="p1"><span class="s1">  margin:auto;</span></p>
-<p class="p1"><span class="s1">  padding:40px 20px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">h1,h2{</span></p>
-<p class="p1"><span class="s1">  font-weight:400;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.card{</span></p>
-<p class="p1"><span class="s1">  background:#fff;</span></p>
-<p class="p1"><span class="s1">  border:1px solid #d6d6d2;</span></p>
-<p class="p1"><span class="s1">  border-radius:16px;</span></p>
-<p class="p1"><span class="s1">  padding:20px;</span></p>
-<p class="p1"><span class="s1">  margin-bottom:24px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.question{</span></p>
-<p class="p1"><span class="s1">  margin-bottom:20px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.scale label{</span></p>
-<p class="p1"><span class="s1">  margin-right:12px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">button{</span></p>
-<p class="p1"><span class="s1">  background:#111;</span></p>
-<p class="p1"><span class="s1">  color:#fff;</span></p>
-<p class="p1"><span class="s1">  border:none;</span></p>
-<p class="p1"><span class="s1">  padding:12px 20px;</span></p>
-<p class="p1"><span class="s1">  border-radius:12px;</span></p>
-<p class="p1"><span class="s1">  font-size:16px;</span></p>
-<p class="p1"><span class="s1">  cursor:pointer;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">canvas{</span></p>
-<p class="p1"><span class="s1">  background:#fff;</span></p>
-<p class="p1"><span class="s1">  border:1px solid #d6d6d2;</span></p>
-<p class="p1"><span class="s1">  border-radius:16px;</span></p>
-<p class="p1"><span class="s1">  margin-top:20px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.small{</span></p>
-<p class="p1"><span class="s1">  font-size:0.9em;</span></p>
-<p class="p1"><span class="s1">  color:#555;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="container"&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;h1&gt;Elementen Scan – het Nationale Theater&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;</span></p>
-<p class="p1"><span class="s1">Deze scan laat zien waar jouw natuurlijke zwaartepunt ligt in vier kwaliteiten:</span></p>
-<p class="p1"><span class="s1">&lt;strong&gt;Aarde&lt;/strong&gt; (stabiliteit), &lt;strong&gt;Water&lt;/strong&gt; (afstemming),</span></p>
-<p class="p1"><span class="s1">&lt;strong&gt;Lucht&lt;/strong&gt; (perspectief) en &lt;strong&gt;Vuur&lt;/strong&gt; (actie).</span></p>
-<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;</span></p>
-<p class="p1"><span class="s1">Je wordt geplot op twee assen (Aarde–Lucht en Water–Vuur), waardoor zichtbaar wordt</span></p>
-<p class="p1"><span class="s1">hoe jij je verhoudt tot het geheel.</span></p>
-<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p class="small"&gt;</span></p>
-<p class="p1"><span class="s1">De resultaten worden door Niek van Halteren verwerkt tot een teamoverzicht,</span></p>
-<p class="p1"><span class="s1">dat wordt besproken in een gezamenlijke teamsessie.</span></p>
-<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p class="small"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;strong&gt;Schaal:&lt;/strong&gt;&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">1 = Helemaal niet van toepassing&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">2 = Weinig van toepassing&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">3 = Soms / neutraal&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">4 = Van toepassing&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">5 = Helemaal van toepassing</span></p>
-<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;form id="form" class="card"&gt;&lt;/form&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;button onclick="calculate()"&gt;Bereken &amp; toon mijn positie&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;canvas id="diagram" width="500" height="500"&gt;&lt;/canvas&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p id="result" class="small"&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1">const questions = [</span></p>
-<p class="p1"><span class="s1">  ["aarde","Ik ben met mijn aandacht in het hier en nu."],</span></p>
-<p class="p1"><span class="s1">  ["aarde","Ik bied stabiliteit wanneer het onrustig wordt."],</span></p>
-<p class="p1"><span class="s1">  ["aarde","Mensen ervaren mij als betrouwbaar."],</span></p>
-<p class="p1"><span class="s1">  ["aarde","Ik handel zorgvuldig."],</span></p>
-<p class="p1"><span class="s1">  ["aarde","Ik ben een rots in de branding."],</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  ["water","Ik voel goed aan wat er speelt in een groep."],</span></p>
-<p class="p1"><span class="s1">  ["water","Ik stem mij gemakkelijk af op anderen."],</span></p>
-<p class="p1"><span class="s1">  ["water","Ik creëer verbinding."],</span></p>
-<p class="p1"><span class="s1">  ["water","Ik luister zonder direct te willen oplossen."],</span></p>
-<p class="p1"><span class="s1">  ["water","Ik ben gevoelig voor onderstromen."],</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  ["lucht","Ik zie patronen en verbanden."],</span></p>
-<p class="p1"><span class="s1">  ["lucht","Ik kan afstand nemen en reflecteren."],</span></p>
-<p class="p1"><span class="s1">  ["lucht","Ik breng nieuwe perspectieven in."],</span></p>
-<p class="p1"><span class="s1">  ["lucht","Ik denk vooruit."],</span></p>
-<p class="p1"><span class="s1">  ["lucht","Ik werk graag met ideeën."],</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  ["vuur","Ik neem initiatief."],</span></p>
-<p class="p1"><span class="s1">  ["vuur","Ik breng energie in beweging."],</span></p>
-<p class="p1"><span class="s1">  ["vuur","Ik durf besluiten te nemen."],</span></p>
-<p class="p1"><span class="s1">  ["vuur","Ik geef richting."],</span></p>
-<p class="p1"><span class="s1">  ["vuur","Ik zet aan tot actie."]</span></p>
-<p class="p1"><span class="s1">];</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">const form = document.getElementById("form");</span></p>
-<p class="p1"><span class="s1">form.innerHTML = questions.map((q,i)=&gt;`</span></p>
-<p class="p1"><span class="s1">  &lt;div class="question"&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;strong&gt;${i+1}. ${q[1]}&lt;/strong&gt;&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">    ${[1,2,3,4,5].map(v=&gt;`</span></p>
-<p class="p1"><span class="s1">      &lt;label&gt;</span></p>
-<p class="p1"><span class="s1">        &lt;input type="radio" name="q${i}" value="${v}" required&gt; ${v}</span></p>
-<p class="p1"><span class="s1">      &lt;/label&gt;</span></p>
-<p class="p1"><span class="s1">    `).join("")}</span></p>
-<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">`).join("");</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">function calculate(){</span></p>
-<p class="p1"><span class="s1">  let score={aarde:0,water:0,lucht:0,vuur:0};</span></p>
-<p class="p1"><span class="s1">  let count={aarde:0,water:0,lucht:0,vuur:0};</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  questions.forEach((q,i)=&gt;{</span></p>
-<p class="p1"><span class="s1">    const v=document.querySelector(`input[name="q${i}"]:checked`);</span></p>
-<p class="p1"><span class="s1">    if(!v){ alert("Beantwoord alle vragen."); return; }</span></p>
-<p class="p1"><span class="s1">    score[q[0]]+=Number(v.value);</span></p>
-<p class="p1"><span class="s1">    count[q[0]]++;</span></p>
-<p class="p1"><span class="s1">  });</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  let avg={</span></p>
-<p class="p1"><span class="s1">    aarde:score.aarde/count.aarde,</span></p>
-<p class="p1"><span class="s1">    water:score.water/count.water,</span></p>
-<p class="p1"><span class="s1">    lucht:score.lucht/count.lucht,</span></p>
-<p class="p1"><span class="s1">    vuur:score.vuur/count.vuur</span></p>
-<p class="p1"><span class="s1">  };</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  let x=(avg.vuur-avg.water)/4;</span></p>
-<p class="p1"><span class="s1">  let y=(avg.lucht-avg.aarde)/4;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  draw(x,y);</span></p>
-<p class="p1"><span class="s1">  document.getElementById("result").innerText=</span></p>
-<p class="p1"><span class="s1">    `Jouw positie: vuur–water = ${x.toFixed(2)}, lucht–aarde = ${y.toFixed(2)}`;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">function draw(x,y){</span></p>
-<p class="p1"><span class="s1">  const c=document.getElementById("diagram");</span></p>
-<p class="p1"><span class="s1">  const ctx=c.getContext("2d");</span></p>
-<p class="p1"><span class="s1">  ctx.clearRect(0,0,500,500);</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  ctx.strokeStyle="#999";</span></p>
-<p class="p1"><span class="s1">  ctx.beginPath();</span></p>
-<p class="p1"><span class="s1">  ctx.moveTo(250,0); ctx.lineTo(250,500);</span></p>
-<p class="p1"><span class="s1">  ctx.moveTo(0,250); ctx.lineTo(500,250);</span></p>
-<p class="p1"><span class="s1">  ctx.stroke();</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  ctx.fillText("Lucht",260,15);</span></p>
-<p class="p1"><span class="s1">  ctx.fillText("Aarde",260,490);</span></p>
-<p class="p1"><span class="s1">  ctx.fillText("Water",10,260);</span></p>
-<p class="p1"><span class="s1">  ctx.fillText("Vuur",460,260);</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  ctx.beginPath();</span></p>
-<p class="p1"><span class="s1">  ctx.arc(250+x*200,250-y*200,8,0,Math.PI*2);</span></p>
-<p class="p1"><span class="s1">  ctx.fill();</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+<header>
+  <h1>Elementen Scan – het Nationale Theater</h1>
+  <p class="muted">
+    Dit instrument brengt individuele én teamprofielen in beeld op de assen
+    <span class="pill">Aarde ↔ Lucht</span> (verticaal) en <span class="pill">Water ↔ Vuur</span> (horizontaal).
+    Het doel is helderheid en gesprek – niet oordeel.
+  </p>
+</header>
+
+<main>
+  <div class="row two">
+    <div class="card">
+      <h2 style="font-weight:400;margin:0 0 8px">Schaal</h2>
+      <div class="scale-legend legend">
+        <div><strong>1</strong> = helemaal niet van toepassing</div>
+        <div><strong>2</strong> = weinig van toepassing</div>
+        <div><strong>3</strong> = soms / neutraal</div>
+        <div><strong>4</strong> = van toepassing</div>
+        <div><strong>5</strong> = helemaal van toepassing</div>
+      </div>
+      <div class="hr"></div>
+      <div class="row">
+        <div>
+          <label class="mini" for="name">Naam (optioneel)</label>
+          <input id="name" type="text" placeholder="Voornaam / initialen"/>
+        </div>
+        <div class="controls">
+          <button id="calc" type="button">Bereken & plot</button>
+          <button id="addTeam" type="button" class="secondary">Voeg toe aan team</button>
+          <button id="downloadCSV" type="button" class="ghost">Download CSV</button>
+          <button id="resetTeam" type="button" class="ghost">Reset team</button>
+        </div>
+        <div class="mini">Teamdata wordt lokaal opgeslagen in je browser. Gebruik “Download CSV” als je de punten wilt bundelen.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="font-weight:400;margin:0 0 8px">Hoe lees je het veld</h2>
+      <p class="mini" style="margin-top:0">
+        <strong>Boven</strong>: Lucht (denken, perspectief, verbeelding). <strong>Onder</strong>: Aarde (hier & nu, stabiliteit, dragen).<br/>
+        <strong>Links</strong>: Water (afstemming, voelen, verbinding). <strong>Rechts</strong>: Vuur (actie, richting, initiatief).<br/><br/>
+        Kijk individueel: waar ligt je zwaartepunt? Kijk als team: waar zitten clusters, waar zijn lege kwadranten?
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-weight:400;margin:0 0 6px">Vragenlijst</h2>
+    <p class="mini" style="margin-top:0">Beantwoord op basis van hoe jij je meestal gedraagt in je werk.</p>
+    <form id="form"></form>
+  </div>
+
+  <div class="row two">
+    <div class="card">
+      <h2 style="font-weight:400;margin:0 0 10px">Individueel diagram</h2>
+      <canvas id="individual" width="700" height="700"></canvas>
+      <div id="indText" class="mini" style="margin-top:10px"></div>
+      <div class="hr"></div>
+      <table>
+        <thead><tr><th>Element</th><th>Aantal vragen</th><th>Gemiddelde</th></tr></thead>
+        <tbody id="scoreRows"></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2 style="font-weight:400;margin:0 0 10px">Teamoverzicht</h2>
+      <canvas id="team" width="700" height="700"></canvas>
+      <div id="teamText" class="mini" style="margin-top:10px"></div>
+      <div class="hr"></div>
+      <table>
+        <thead><tr><th>Team</th><th>Aantal punten</th><th>Zwaartepunt</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Huidige browser</td>
+            <td id="teamCount">0</td>
+            <td id="teamCentroid">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<script>
+const QUESTIONS = [
+  // AARDE (13)
+  ["aarde","Ik ben met mijn aandacht in het hier en nu."],
+  ["aarde","Ik bied stabiliteit wanneer het onrustig wordt."],
+  ["aarde","Mensen ervaren mij als betrouwbaar en consistent."],
+  ["aarde","Ik handel zorgvuldig en neem de tijd."],
+  ["aarde","Ik voel me stevig en gegrond in mijn rol."],
+  ["aarde","Ik blijf staan, ook als het spannend wordt."],
+  ["aarde","Ik zorg dat wat is opgebouwd, behouden blijft."],
+  ["aarde","Ik voel me verantwoordelijk voor continuïteit."],
+  ["aarde","Ik breng structuur en houvast."],
+  ["aarde","Ik ben loyaal aan mensen en afspraken."],
+  ["aarde","Ik maak dingen af, ook als het saai wordt."],
+  ["aarde","Ik kan goed werken met wat er al is."],
+  ["aarde","Ik ben een ‘rots in de branding’ voor anderen."],
+
+  // WATER (13)
+  ["water","Ik voel goed aan wat er speelt in een groep."],
+  ["water","Ik stem mijn gedrag af op anderen."],
+  ["water","Ik ben gevoelig voor sfeer en onderstromen."],
+  ["water","Mensen voelen zich bij mij gehoord."],
+  ["water","Ik beweeg mee met wat de situatie vraagt."],
+  ["water","Ik verbind mensen met elkaar."],
+  ["water","Ik kan diep luisteren zonder direct te willen oplossen."],
+  ["water","Ik laat ruimte voor emoties."],
+  ["water","Ik voel aan wanneer iets gezegd of juist gelaten moet worden."],
+  ["water","Ik kan me verplaatsen in meerdere standpunten."],
+  ["water","Ik merk spanningen vroeg op."],
+  ["water","Ik vertrouw op timing en proces."],
+  ["water","Ik zoek verbinding, ook als het schuurt."],
+
+  // LUCHT (12)
+  ["lucht","Ik kan afstand nemen en overzicht creëren."],
+  ["lucht","Ik zie verbanden en patronen."],
+  ["lucht","Ik denk gemakkelijk vooruit."],
+  ["lucht","Ik breng nieuwe ideeën of perspectieven in."],
+  ["lucht","Ik help anderen om anders te kijken."],
+  ["lucht","Ik ben nieuwsgierig naar mogelijkheden."],
+  ["lucht","Ik kan woorden geven aan wat nog vaag is."],
+  ["lucht","Ik beweeg gemakkelijk tussen verleden en toekomst."],
+  ["lucht","Ik verbeeld wat er nog niet is."],
+  ["lucht","Ik stel vragen die aannames openbreken."],
+  ["lucht","Ik kan complexiteit helder maken."],
+  ["lucht","Ik werk graag met scenario’s en opties."],
+
+  // VUUR (12)
+  ["vuur","Ik neem initiatief als iets in beweging moet komen."],
+  ["vuur","Ik geef richting wanneer het onduidelijk wordt."],
+  ["vuur","Ik durf besluiten te nemen."],
+  ["vuur","Ik breng energie in processen."],
+  ["vuur","Ik zet anderen aan tot actie."],
+  ["vuur","Ik ben niet bang om zichtbaar te zijn."],
+  ["vuur","Ik bepaal tempo wanneer dat nodig is."],
+  ["vuur","Ik confronteer als iets vastloopt."],
+  ["vuur","Ik ga voor resultaat."],
+  ["vuur","Ik neem ruimte in."],
+  ["vuur","Ik durf te starten zonder volledige zekerheid."],
+  ["vuur","Ik kan een vuurtje aanwakkeren bij anderen."]
+];
+
+const COUNTS = QUESTIONS.reduce((acc,[el]) => (acc[el]=(acc[el]||0)+1, acc), {});
+const form = document.getElementById("form");
+
+form.innerHTML = QUESTIONS.map(([el,text], i) => `
+  <div class="q">
+    <p class="q-title"><strong>${i+1}.</strong> ${text}</p>
+    <div class="scale" data-el="${el}">
+      ${[1,2,3,4,5].map(v => `<label><input required type="radio" name="q${i}" value="${v}"> ${v}</label>`).join("")}
+    </div>
+    <div class="mini">Element: ${el}</div>
+  </div>
+`).join("");
+
+function collectScores(){
+  const sums = {aarde:0, water:0, lucht:0, vuur:0};
+  const avgs = {aarde:0, water:0, lucht:0, vuur:0};
+
+  for(let i=0;i<QUESTIONS.length;i++){
+    const el = QUESTIONS[i][0];
+    const sel = document.querySelector(`input[name="q${i}"]:checked`);
+    if(!sel) return {error:"Beantwoord alle vragen."};
+    sums[el] += Number(sel.value);
+  }
+  Object.keys(sums).forEach(k => { avgs[k] = sums[k] / COUNTS[k]; });
+
+  const x = (avgs.vuur - avgs.water) / 4; // [-1..1]
+  const y = (avgs.lucht - avgs.aarde) / 4; // [-1..1]
+  return {sums, avgs, x, y};
+}
+
+function drawField(canvasId, points, centroid=null){
+  const c = document.getElementById(canvasId);
+  const ctx = c.getContext("2d");
+  const W = c.width, H = c.height;
+  const cx = W/2, cy = H/2;
+  const r = Math.min(W,H)*0.38;
+  ctx.clearRect(0,0,W,H);
+
+  ctx.fillStyle = "#fff"; ctx.fillRect(0,0,W,H);
+  ctx.strokeStyle = "#d6d6d2"; ctx.lineWidth = 1;
+  ctx.strokeRect(0.5,0.5,W-1,H-1);
+
+  // axes
+  ctx.strokeStyle = "#8f8f8a"; ctx.lineWidth = 1.2;
+  ctx.beginPath();
+  ctx.moveTo(cx, 0); ctx.lineTo(cx, H);
+  ctx.moveTo(0, cy); ctx.lineTo(W, cy);
+  ctx.stroke();
+
+  // guide circle
+  ctx.strokeStyle = "#e3e3df"; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI*2); ctx.stroke();
+
+  // labels
+  ctx.fillStyle = "#5a5a5a";
+  ctx.font = "16px Georgia";
+  ctx.fillText("lucht", cx+10, 28);
+  ctx.fillText("aarde", cx+10, H-14);
+  ctx.fillText("water", 18, cy+18);
+  ctx.fillText("vuur", W-52, cy+18);
+
+  // points
+  ctx.fillStyle = "#111";
+  points.forEach(p => {
+    const px = cx + p.x * r;
+    const py = cy - p.y * r;
+    ctx.beginPath(); ctx.arc(px, py, 7, 0, Math.PI*2); ctx.fill();
+    if(p.label){
+      ctx.font = "14px Georgia";
+      ctx.fillText(p.label, px+10, py-10);
+    }
+  });
+
+  // centroid highlight
+  if(centroid){
+    const px = cx + centroid.x * r;
+    const py = cy - centroid.y * r;
+    ctx.strokeStyle = "#111";
+    ctx.setLineDash([6,4]);
+    ctx.beginPath(); ctx.arc(px, py, 12, 0, Math.PI*2); ctx.stroke();
+    ctx.setLineDash([]);
+  }
+}
+
+function quadrantText(x,y){
+  const vertical = y >= 0 ? "meer Lucht (perspectief/denken)" : "meer Aarde (gronding/dragen)";
+  const horizontal = x >= 0 ? "meer Vuur (actie/richting)" : "meer Water (afstemming/verbinding)";
+  return `${vertical} en ${horizontal}.`;
+}
+
+const STORAGE_KEY = "elementen_team_points_v1";
+
+function loadTeam(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  }catch(e){ return []; }
+}
+function saveTeam(points){ localStorage.setItem(STORAGE_KEY, JSON.stringify(points)); }
+
+let teamPoints = loadTeam();
+
+function renderTeam(){
+  const n = teamPoints.length;
+  let centroid = null;
+  if(n){
+    centroid = teamPoints.reduce((a,p)=>({x:a.x+p.x, y:a.y+p.y}),{x:0,y:0});
+    centroid.x/=n; centroid.y/=n;
+  }
+  drawField("team", teamPoints.map(p=>({x:p.x,y:p.y,label:""})), centroid);
+  document.getElementById("teamCount").textContent = String(n);
+  document.getElementById("teamCentroid").textContent = n ? `${centroid.x.toFixed(2)}, ${centroid.y.toFixed(2)} (${quadrantText(centroid.x, centroid.y)})` : "—";
+  document.getElementById("teamText").textContent = n ? `Zwaartepunt: ${quadrantText(centroid.x, centroid.y)}` : "Nog geen teamdata opgeslagen in deze browser.";
+}
+
+document.getElementById("calc").addEventListener("click", () => {
+  const res = collectScores();
+  if(res.error){ alert(res.error); return; }
+  const label = (document.getElementById("name").value||"").trim();
+  drawField("individual", [{x:res.x, y:res.y, label}]);
+  document.getElementById("indText").textContent = `Jouw positie: ${res.x.toFixed(2)}, ${res.y.toFixed(2)} → ${quadrantText(res.x, res.y)}`;
+
+  const rows = Object.keys(res.avgs).map(k =>
+    `<tr><td>${k}</td><td>${COUNTS[k]}</td><td>${res.avgs[k].toFixed(2)} / 5</td></tr>`
+  ).join("");
+  document.getElementById("scoreRows").innerHTML = rows;
+});
+
+document.getElementById("addTeam").addEventListener("click", () => {
+  const res = collectScores();
+  if(res.error){ alert(res.error); return; }
+  const name = (document.getElementById("name").value||"").trim();
+  teamPoints.push({x:res.x, y:res.y, name, ts: new Date().toISOString()});
+  saveTeam(teamPoints);
+  renderTeam();
+  alert("Toegevoegd aan teamoverzicht (lokaal opgeslagen in je browser).");
+});
+
+document.getElementById("resetTeam").addEventListener("click", () => {
+  if(!confirm("Weet je zeker dat je het teamoverzicht wilt resetten? (alle punten in deze browser verdwijnen)")) return;
+  teamPoints = [];
+  saveTeam(teamPoints);
+  renderTeam();
+});
+
+document.getElementById("downloadCSV").addEventListener("click", () => {
+  const header = ["naam","timestamp","x_vuur_minus_water","y_lucht_minus_aarde"].join(",");
+  const lines = teamPoints.map(p => [ (p.name||"").replace(/,/g," "), p.ts, p.x, p.y ].join(","));
+  const csv = header + "\\n" + lines.join("\\n") + "\\n";
+  const blob = new Blob([csv], {type:"text/csv"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "team_elementen_export.csv";
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(url); a.remove(); },0);
+});
+
+drawField("individual", [], null);
+renderTeam();
+</script>
 </body>
 </html>
